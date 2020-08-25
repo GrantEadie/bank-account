@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(190,242,255,1) 0%, rgba(30,217,255,1) 100%);
+}
+
+.card {
+  /* background: lightblue !important; */
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(30,217,255,1) 0%, rgba(190,242,255,1) 100%);
+  /* border: 10px solid cyan; */
+}
+
+input {
+  float: right;
+  width: 300px;
+}
+
+button {
+  /* text-align: center; */
+  float: right;
+  width: 100%;
+}

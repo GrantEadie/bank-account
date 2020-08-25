@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Bank Account</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron" style="text-align: center; font-family: 'Bebas Neue', cursive;">
+      <h1>Joe's Totally Secure Bank</h1>
+    </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Register a new account:</h4>
+              <form id="new-acct">
+                <label for="name">Name:</label>
+                <input id="name" type="text"><br>
+                <label for="initial-deposit">Initial Deposit:</label>
+                <input id="initial-deposit" type="number" min=".01" step="any">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-secondary">Confirm</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Deposit or withdraw funds:</h4>
+              <form id="deposit-withdraw">
+                <label for="deposit-amount">Deposit Amount:</label>
+                <input id="deposit-amount" type="number" min="1" step="any"><br>
+                <label for="withdrawal-amount">Withdrawal Amount:</label>
+                <input id="withdrawal-amount" type="number" min="1" step="any">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-secondary">Confirm</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 id="balance">Balance: <span id="balance-amount"></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
